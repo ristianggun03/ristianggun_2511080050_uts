@@ -1,24 +1,22 @@
 /* External CSS - style.css */
-/* Tema Warna: Light Blue & Pink */
 
-/* CSS Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Variabel CSS untuk tema Light Blue & Pink */
+/* Variabel CSS dengan tema light blue dan pink */
 :root {
-  --primary-color: #87ceeb; /* Light Blue */
-  --secondary-color: #ffb6c1; /* Light Pink */
-  --accent-color: #ff69b4; /* Hot Pink */
-  --light-color: #f0f8ff; /* Alice Blue */
-  --dark-color: #4682b4; /* Steel Blue */
-  --text-color: #2f4f4f; /* Dark Slate Gray */
-  --light-text: #ffffff; /* White */
-  --shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  --transition: all 0.3s ease;
+  .primary-color: #87ceeb; /* Light Blue */
+  .secondary-color: #ffb6c1; /* Light Pink */
+  .accent-color: #ff69b4; /* Hot Pink */
+  .light-color: #f0f8ff; /* Alice Blue */
+  .dark-color: #4682b4; /* Steel Blue */
+  .text-color: #2f4f4f; /* Dark Slate Gray */
+  .light-text: #ffffff; /* White */
+  .shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  .transition: all 0.3s ease;
 }
 
 /* Global Styles */
@@ -656,3 +654,4 @@ button.wa {
   border: 5px solid #87ceeb;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
+
