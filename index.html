@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page Personal - Risti Anggun</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Internal CSS -->
+
+    <style>
+.profile-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-image: url('d:\Data\Pictures\Saved Pictures\ty.jpg');
+    background-size: cover;
+    background-position: center;
+    border: 5px solid #87CEEB;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+      /* Internal CSS untuk efek khusus dan animasi */
+
+      /* Efek glow pada tombol utama */
+      .hero-btn {
+        position: relative;
+        overflow: hidden;
+        transition: all 0.4s ease;
+      }
+
+      .hero-btn::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.4),
+          transparent
+        );
+        transition: left 0.5s;
+      }
+
+      .hero-btn:hover::before {
+        left: 100%;
+      }
+
+      /* Animasi mengambang untuk foto profil */
+      @keyframes float {
+        0% {
+          transform: translateY(0px);
+        }
+        80% {
+          transform: translateY(-10px);
+        }
+        100% {
+          transform: translateY(0px);
+        }
+      }
+
+      .profile-img {
+        animation: float 4s ease-in-out infinite;
+
+      }
+
+    </style>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <div class="container">
+        <h1>Risti Anggun</h1>
+        <p>Mahasiswa Stikom El Rahma yang juga <br> Gadis penyuka mie ayam dan matcha</p>
+        </div>
+      </div>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+      <div class="container">
+        <ul class="nav-menu">
+          <li><a href="#home">Home page</a></li>
+          <li><a href="#profile">My Profile</a></li>
+          <li><a href="#skills">My skills</a></li>
+          <li><a href="#contact">Connect with me</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+      <!-- Hero Section -->
+      <section id="home" class="hero">
+        <div class="hero-content">
+          <h2>Welcome to my profile</h2>
+          <p>Hallo, Aku Risti anggun</p> aku adalah mahasiswi STIKOM EL RAHMA yang mengambil jurusan Administrasi
+        <br> Mohon maaf, disini ada pencampuran bahasa inggris dan indonesia</p>
+          <a href="#profile" class="btn hero-btn">Let see about me?</a>
+        </div>
+        <div class="hero-image">
+          <!-- Placeholder untuk gambar profil -->
+          <div class="profile-img"></div>
+        </div>
+      </section>
+
+      <!-- Profile Section -->
+      <section id="profile" class="profile">
+        <h2 class="section-title">Short profile</h2>
+        <div class="profile-grid">
+          <div class="profile-item">
+            <h3>My Full Name</h3>
+            <p>Risti Anggun</p>
+          </div>
+          <div class="profile-item">
+            <h3>Place and date of birth</h3>
+            <p>Garut, 10 Maret 2007</p>
+          </div>
+          <div class="profile-item">
+            <h3>My Address</h3>
+            <p>Jl. Ahmad yani, Garut jawa barat</p>
+          </div>
+          <div class="profile-item">
+            <h3>My Major</h3>
+            <p>Administrasi</p>
+          </div>
+          <div class="profile-item">
+            <h3>Universitas</h3>
+            <p>STIKOM EL RAHMA BOGOR</p>
+          </div>
+          <div class="profile-item">
+            <h3>My hobby</h3>
+            <p>Writing, Reading, Editing, and photography</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="skills">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-item">
+            <h3>Writing</h3>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 90%"></div>
+            </div>
+            <span>90%</span>
+          </div>
+          <div class="skill-item">
+            <h3>Editing</h3>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 85%"></div>
+            </div>
+            <span>85%</span>
+          </div>
+          <div class="skill-item">
+            <h3>photography</h3>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 80%"></div>
+            </div>
+            <span>80%</span>
+          </div>
+        </div>
+    </section>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="container">
+        <h3>My Contact</h3>
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="contact-icon">📞</span>
+            <div>
+              <p>My Number</p>
+              <a href="https://wa.link/vefrbf"><button class="button.wa">My Whatshapp</button></a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">✉</span>
+            <div>
+              <p>Email</p>
+              <p>ristyanggun36@email.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">🔗</span>
+            <div>
+              <p>LinkedIn</p>
+              <a href="https://www.linkedin.com/in/risty-anggun-5b4602376?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><button class="button.linkedin">My LinkedIn</button></a>
+            </div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📷</span>
+            <div>
+              <p>Instagram</p>
+              <a href="https://www.instagram.com/frschldtyy?igsh=aWhkcXFkeW1kaDAz"><button class="button.ig">My Instagram</button></a>
+            </div>
+          </div>
+        </div>
+
+        <h3>Edukasi</h3>
+        <div class="education">
+          <div class="edu-item">
+            <h4>Kampus Stikom El Rahma</h4>
+            <p>Administrasi (2025 - Sekarang)</p>
+          </div>
+          <div class="edu-item">
+            <h4>SMKI Assalafiyah</h4>
+            <p>Jurusan TKJ (2021 - 2024)</p>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h4>About Me</h4>
+            <p>
+              Aku adalah mahasiswi Stikom El Rahma yang mengambil jurusan Administrasi untuk satu tahun pertama. 
+              <br> Saat ini aku sedang menjalani semester 1 di Stikom El Rahma. 
+              <br> Aku berharap dengan sedikitnya keahlian saya, saya bisa berkembang dan terus menerus belajar dengan sungguh-sungguh disini.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h4>Fast Link</h4>
+            <ul>
+              <li><a href="#home">Home page</a></li>
+              <li><a href="#profile">My Profile</a></li>
+              <li><a href="#contact">My contact</a></li>
+              <li><a href="#skills">Skills</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Connect With Me</h4>
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/risty-anggun-5b4602376?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a>
+              <a href="https://share.google/cGxp634AaBY59zsgt">GitHub</a>
+              <a href="https://www.instagram.com/frschldtyy?igsh=aWhkcXFkeW1kaDAz">Instagram</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Risti Anggun. All rights reserved.</p>
+          <p>Making with love for UTS Pemrograman Web</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
