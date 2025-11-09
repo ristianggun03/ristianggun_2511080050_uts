@@ -1,12 +1,14 @@
 /* External CSS - style.css */
+/* Tema Warna: Light Blue & Pink */
 
+/* CSS Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Variabel CSS untuk tema light blue dan pink */
+/* Variabel CSS untuk tema Light Blue & Pink */
 :root {
   --primary-color: #87ceeb; /* Light Blue */
   --secondary-color: #ffb6c1; /* Light Pink */
